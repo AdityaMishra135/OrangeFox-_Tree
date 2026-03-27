@@ -42,8 +42,11 @@ RELAX_USES_LIBRARY_CHECK := true
 # A/B support
 AB_OTA_UPDATER := true
 
-# VNDK
-PRODUCT_TARGET_VNDK_VERSION := 31
+# API
+PRODUCT_SHIPPING_API_LEVEL  := 34
+PRODUCT_TARGET_VNDK_VERSION := 34
+BOARD_SHIPPING_API_LEVEL := 34
+SHIPPING_API_LEVEL := 34
 
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
@@ -79,11 +82,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
     FILESYSTEM_TYPE_vendor=ext4 \
     POSTINSTALL_OPTIONAL_vendor=true
-
-## Set GRF/Vendor freeze properties
-BOARD_SHIPPING_API_LEVEL := 34
-SHIPPING_API_LEVEL := 34
-PRODUCT_SHIPPING_API_LEVEL := 34
 
 # OrangeFox OF_ variables
 OF_SCREEN_H := 2460
