@@ -1,0 +1,68 @@
+#!/bin/bash
+# OrangeFox Recovery Project - fox_14.1 branch setup
+# Export all required FOX_ and OF_ variables for latest OFRP build
+
+# Device/Platform
+export FOX_VIRTUAL_AB_DEVICE=1
+export FOX_AB_DEVICE=1
+export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+export TARGET_ARCH=arm64
+
+# Screen & UI
+export OF_SCREEN_H=2460
+export OF_STATUS_H=100
+export OF_STATUS_INDENT_LEFT=50
+export OF_STATUS_INDENT_RIGHT=48
+export OF_HIDE_NOTCH=1
+export OF_CLOCK_POS=1
+export OF_ALLOW_DISABLE_NAVBAR=0
+
+# Security & Features
+export OF_ADVANCED_SECURITY=1
+export OF_USE_GREEN_LED=0
+export OF_ENABLE_LPTOOLS=1
+export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
+export OF_UNMOUNT_SDCARDS_BEFORE_REBOOT=1
+export FOX_USE_UPDATED_MAGISKBOOT=1
+export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
+export FOX_DELETE_AROMAFM=1
+export FOX_USE_BASH_SHELL=1
+export FOX_USE_NANO_EDITOR=1
+export FOX_USE_TAR_BINARY=1
+export FOX_USE_SED_BINARY=1
+export FOX_USE_XZ_UTILS=1
+export FOX_USE_ZSTD_BINARY=1
+export FOX_ASH_IS_BASH=1
+export FOX_USE_LZ4_BINARY=1
+export FOX_USE_DATE_BINARY=1
+export FOX_USE_GREP_BINARY=1
+export FOX_USE_BUSYBOX_BINARY=1
+export FOX_USE_FSCK_EROFS_BINARY=0
+export FOX_USE_PATCHELF_BINARY=0
+export FOX_USE_DMSETUP=0
+export OF_USE_DMCTL=0
+export FOX_USE_MEIZU_TOUCH_MAPPING=0
+export FOX_ENABLE_APP_MANAGER=1
+export FOX_BASH_TO_SYSTEM_BIN=0
+export FOX_ENABLE_KERNELSU_SUPPORT=0
+export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=0
+export FOX_ENABLE_SUKISU_SUPPORT=0
+export FOX_ADD_API_V36_PREBUILTS=0
+export FOX_REMOVE_BUSYBOX_BINARY=0
+export FOX_REMOVE_AAPT=0
+export FOX_REMOVE_ZIP_BINARY=0
+export FOX_EXCLUDE_NANO_EDITOR=0
+export FOX_USE_SPECIFIC_MAGISK_ZIP=""
+export FOX_JAVA8_PATH="/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java"
+
+# Flashlight
+export OF_FL_PATH1="/tmp/flashlight"
+
+# Backup & Timezone
+export OF_QUICK_BACKUP_LIST="/boot"
+export OF_DEFAULT_TIMEZONE="IST-5:30"
+
+# Miscellaneous
+export ALLOW_MISSING_DEPENDENCIES=true
+
+# Add any additional customizations below as needed
